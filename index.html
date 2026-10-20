@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodeCarvalho | Criação de Landing Pages e Sites</title>
+    <title>CodeCarvalho | Landing Pages, Sites e QA Testing</title>
+    <meta name="description" content="Desenvolvimento de landing pages de alta conversão + QA Engineer. Testes funcionais, performance, responsividade e acessibilidade em cada projeto.">
+    <meta name="author" content="Gabriele Carvalho">
+    <meta property="og:title" content="CodeCarvalho | Landing Pages, Sites e QA Testing">
+    <meta property="og:description" content="Landing pages que convertem e código que não quebra. Front-end Dev + QA Engineer.">
+    <meta property="og:type" content="website">
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg?v=4">
     <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -21,27 +26,35 @@
             <div class="nav-links">
                 <a href="#home">Início</a>
                 <a href="#services">Serviços</a>
+                <a href="#qa">QA</a>
                 <a href="#portfolio">Portfólio</a>
                 <a href="#pricing">Preços</a>
                 <a href="#about">Sobre</a>
                 <a href="#contact">Contato</a>
-                <a href="#quote" class="btn btn-outline">Orçamento</a>
+                <a href="#contact" class="btn btn-outline">Orçamento</a>
             </div>
         </nav>
     </header>
 
+    <!-- ===== HERO ===== -->
     <section class="hero" id="home">
-        <!-- Hero content (mantido igual) -->
         <div class="hero-content">
             <div class="hero-text">
+                <div class="hero-badge">
+                    <span class="pulse-dot"></span>
+                    Full-Stack Dev + QA Engineer
+                </div>
                 <h1>
-                    Crie <span class="gradient-text">Landing Pages</span> que Convertem
+                    Landing pages que <span class="gradient-text">convertem</span><br>
+                    e código que <span class="gradient-text">não quebra</span>.
                 </h1>
-                <p>Landing pages profissionais e otimizadas para conversão. Design moderno, código limpo e resultados garantidos.</p>
+                <p>Desenvolvedora full-stack e <strong>QA Engineer</strong>. Cada página entregue passa por testes funcionais, responsivos, de performance e acessibilidade antes de ir ao ar.</p>
                 <div class="hero-buttons">
-                    <a href="#quote" class="btn btn-primary">Quero uma página</a>
+                    <a href="https://wa.me/5547996412384?text=Ol%C3%A1!%20Vim%20pelo%20site%20CodeCarvalho%20e%20quero%20um%20or%C3%A7amento%20para%20uma%20landing%20page." target="_blank" rel="noopener" class="btn btn-primary">
+                        <i class="fab fa-whatsapp"></i> Quero uma página
+                    </a>
                     <a href="#portfolio" class="btn btn-outline">Ver portfólio</a>
-                    <a href="#services" class="btn btn-outline">Conheça os serviços</a>
+                    <a href="#qa" class="btn btn-outline">Conheça o QA</a>
                 </div>
                 <div class="hero-stats">
                     <div class="stat-item">
@@ -53,8 +66,8 @@
                         <span class="stat-label">Clientes satisfeitos</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-number">10 dias úteis</span>
-                        <span class="stat-label">Entrega rápida</span>
+                        <span class="stat-number">0</span>
+                        <span class="stat-label">Bugs em produção</span>
                     </div>
                 </div>
             </div>
@@ -68,25 +81,40 @@
                     <div class="grid-item">
                         <div class="grid-icon">📱</div>
                         <h3>Responsivo</h3>
-                        <p>Perfeito em telas</p>
+                        <p>Perfeito em todas as telas</p>
                     </div>
                     <div class="grid-item">
                         <div class="grid-icon">🚀</div>
                         <h3>Performance</h3>
                         <p>Carregamento rápido</p>
                     </div>
-                    <div class="grid-item">
-                        <div class="grid-icon">🎨</div>
-                        <h3>Design Único</h3>
-                        <p>Exclusivo para você</p>
+                    <div class="grid-item grid-item-qa-terminal">
+                        <div class="terminal-header-bar">
+                            <span class="dot dot-red"></span>
+                            <span class="dot dot-yellow"></span>
+                            <span class="dot dot-green"></span>
+                            <span class="terminal-title">qa_test.sh</span>
+                        </div>
+                        <div class="terminal-body">
+                            <div class="terminal-line"><span class="prompt">$</span> run tests</div>
+                            <div class="terminal-line success">✓ functional.spec</div>
+                            <div class="terminal-line success">✓ responsive.spec</div>
+                            <div class="terminal-line success">✓ a11y.spec</div>
+                            <div class="terminal-line active">
+                                <span class="terminal-line-icon">🧪</span>
+                                <strong>Análise e Teste — QA</strong>
+                                <span class="cursor">_</span>
+                            </div>
+                        </div>
+                        <p class="terminal-caption">Testado e aprovado antes de cada entrega</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- ===== SERVIÇOS ===== -->
     <section class="services" id="services">
-        <!-- Services content (mantido igual) -->
         <div class="section-header">
             <h2>Serviços <span class="gradient-text">Profissionais</span></h2>
             <p>Soluções completas para sua presença digital</p>
@@ -97,50 +125,246 @@
                 <h3>Landing Page Básica</h3>
                 <p>Ideal para quem está começando e precisa de uma página simples e objetiva.</p>
                 <div class="card-price">R$ 497 <span>/ único</span></div>
+                <a href="https://wa.me/5547996412384?text=Ol%C3%A1!%20Quero%20contratar%20a%20Landing%20Page%20B%C3%A1sica%20(R%24%20497)." target="_blank" rel="noopener" class="btn btn-outline btn-sm">Contratar</a>
             </div>
             <div class="service-card">
                 <div class="card-icon">💼</div>
                 <h3>Landing Page Profissional</h3>
                 <p>Design personalizado, seções completas e otimização para conversão.</p>
-                <div class="card-price">R$ 997 <span>/ único</span></div>
+                <div class="card-price">R$ 750 <span>/ único</span></div>
+                <a href="https://wa.me/5547996412384?text=Ol%C3%A1!%20Quero%20contratar%20a%20Landing%20Page%20Profissional%20(R%24%20997)." target="_blank" rel="noopener" class="btn btn-outline btn-sm">Contratar</a>
             </div>
             <div class="service-card">
                 <div class="card-icon">🚀</div>
                 <h3>Landing Page Premium</h3>
                 <p>Página completa com integrações, animações e suporte prioritário.</p>
-                <div class="card-price">R$ 2.799 <span>/ único</span></div>
+                <div class="card-price">R$ 999 <span>/ único</span></div>
+                <a href="https://wa.me/5547996412384?text=Ol%C3%A1!%20Quero%20contratar%20a%20Landing%20Page%20Premium%20(R%24%202.799)." target="_blank" rel="noopener" class="btn btn-outline btn-sm">Contratar</a>
+            </div>
+            <div class="service-card service-qa">
+                <div class="card-icon">🧪</div>
+                <h3>Auditoria QA</h3>
+                <p>Análise completa do seu site atual: bugs, performance, SEO e acessibilidade com relatório detalhado.</p>
+                <div class="card-price">R$ 699 <span>/ auditoria</span></div>
+                <a href="https://wa.me/5547996412384?text=Ol%C3%A1!%20Quero%20uma%20Auditoria%20QA%20(R%24%20397)%20para%20meu%20site." target="_blank" rel="noopener" class="btn btn-outline btn-sm">Contratar</a>
             </div>
         </div>
     </section>
 
-    <!-- SEÇÃO PORTFÓLIO -->
+    <!-- ===== QA SECTION ===== -->
+<section class="qa-section" id="qa">
+    <div class="section-header">
+        <span class="badge-qa">🔬 Quality Assurance</span>
+        <h2>Não é só <span class="gradient-text">design</span>. É <span class="gradient-text">qualidade</span>.</h2>
+        <p>Como QA Engineer, cada página que entrego passa por um rigoroso processo de testes antes de ir ao ar.</p>
+    </div>
+
+    <div class="qa-grid">
+        <!-- 1 — Testes Funcionais -->
+        <div class="qa-card" tabindex="0">
+            <div class="qa-card-main">
+                <div class="qa-icon">🧪</div>
+                <h3>Testes Funcionais</h3>
+                <p>Validação completa dos fluxos e funcionalidades.</p>
+            </div>
+            <div class="qa-card-expand">
+                <ul class="qa-detail-list">
+                    <li><span class="qa-check">✓</span> Fluxos de cadastro e contato</li>
+                    <li><span class="qa-check">✓</span> Validação de campos e máscaras</li>
+                    <li><span class="qa-check">✓</span> Navegação e links internos</li>
+                    <li><span class="qa-check">✓</span> Integrações (WhatsApp, APIs)</li>
+                    <li><span class="qa-check">✓</span> Regras de negócio</li>
+                </ul>
+            </div>
+            <span class="qa-hover-hint">hover ⌄</span>
+        </div>
+
+        <!-- 2 — Testes Manuais e Exploratórios -->
+        <div class="qa-card" tabindex="0">
+            <div class="qa-card-main">
+                <div class="qa-icon">🔍</div>
+                <h3>Testes Manuais e Exploratórios</h3>
+                <p>Análise humana para encontrar o que script não vê.</p>
+            </div>
+            <div class="qa-card-expand">
+                <ul class="qa-detail-list">
+                    <li><span class="qa-check">✓</span> Testes manuais guiados por cenário</li>
+                    <li><span class="qa-check">✓</span> Sessões exploratórias sem script</li>
+                    <li><span class="qa-check">✓</span> Testes de usabilidade</li>
+                    <li><span class="qa-check">✓</span> Validação de UX em fluxos reais</li>
+                    <li><span class="qa-check">✓</span> Verificação cross-browser e device</li>
+                </ul>
+            </div>
+            <span class="qa-hover-hint">hover ⌄</span>
+        </div>
+
+        <!-- 3 — Testes de API (Postman) -->
+        <div class="qa-card" tabindex="0">
+            <div class="qa-card-main">
+                <div class="qa-icon">📡</div>
+                <h3>Testes de API — Postman</h3>
+                <p>Validação de endpoints, contratos e respostas.</p>
+            </div>
+            <div class="qa-card-expand">
+                <ul class="qa-detail-list">
+                    <li><span class="qa-check">✓</span> Collections e requests no Postman</li>
+                    <li><span class="qa-check">✓</span> Validação de status codes (200, 400, 401, 500)</li>
+                    <li><span class="qa-check">✓</span> Schema e contrato de resposta</li>
+                    <li><span class="qa-check">✓</span> Autenticação e headers</li>
+                    <li><span class="qa-check">✓</span> Testes automatizados com scripts (pm.test)</li>
+                </ul>
+            </div>
+            <span class="qa-hover-hint">hover ⌄</span>
+        </div>
+
+        <!-- 4 — Smoke Test -->
+        <div class="qa-card" tabindex="0">
+            <div class="qa-card-main">
+                <div class="qa-icon">💨</div>
+                <h3>Smoke Test</h3>
+                <p>Verificação rápida do essencial após cada deploy.</p>
+            </div>
+            <div class="qa-card-expand">
+                <ul class="qa-detail-list">
+                    <li><span class="qa-check">✓</span> Validação de funcionalidades críticas</li>
+                    <li><span class="qa-check">✓</span> Verificação pós-deploy (build saudável)</li>
+                    <li><span class="qa-check">✓</span> Checagem de login, navegação e CTAs</li>
+                    <li><span class="qa-check">✓</span> Detecção precoce de falhas graves</li>
+                    <li><span class="qa-check">✓</span> Aprovação rápida para seguir os testes</li>
+                </ul>
+            </div>
+            <span class="qa-hover-hint">hover ⌄</span>
+        </div>
+
+        <!-- 5 — Caixa Preta -->
+        <div class="qa-card" tabindex="0">
+            <div class="qa-card-main">
+                <div class="qa-icon">⬛</div>
+                <h3>Caixa Preta</h3>
+                <p>Testes baseados em entrada e saída, sem ver o código.</p>
+            </div>
+            <div class="qa-card-expand">
+                <ul class="qa-detail-list">
+                    <li><span class="qa-check">✓</span> Validação de entrada × saída esperada</li>
+                    <li><span class="qa-check">✓</span> Partição de equivalência e valores-limite</li>
+                    <li><span class="qa-check">✓</span> Testes de comportamento do usuário</li>
+                    <li><span class="qa-check">✓</span> Validação de mensagens de erro</li>
+                    <li><span class="qa-check">✓</span> Foco na experiência real do usuário</li>
+                </ul>
+            </div>
+            <span class="qa-hover-hint">hover ⌄</span>
+        </div>
+
+        <!-- 6 — Caixa Branca -->
+        <div class="qa-card" tabindex="0">
+            <div class="qa-card-main">
+                <div class="qa-icon">⬜</div>
+                <h3>Caixa Branca</h3>
+                <p>Análise do código interno, lógica e caminhos.</p>
+            </div>
+            <div class="qa-card-expand">
+                <ul class="qa-detail-list">
+                    <li><span class="qa-check">✓</span> Cobertura de código (branches e paths)</li>
+                    <li><span class="qa-check">✓</span> Validação de condições e loops</li>
+                    <li><span class="qa-check">✓</span> Análise de funções e retornos</li>
+                    <li><span class="qa-check">✓</span> Detecção de código morto</li>
+                    <li><span class="qa-check">✓</span> Revisão de segurança no código</li>
+                </ul>
+            </div>
+            <span class="qa-hover-hint">hover ⌄</span>
+        </div>
+
+        <!-- 7 — Caixa Cinza -->
+        <div class="qa-card" tabindex="0">
+            <div class="qa-card-main">
+                <div class="qa-icon">🔘</div>
+                <h3>Caixa Cinza</h3>
+                <p>Híbrido entre preta e branca: equilíbrio ideal.</p>
+            </div>
+            <div class="qa-card-expand">
+                <ul class="qa-detail-list">
+                    <li><span class="qa-check">✓</span> Conhecimento parcial da estrutura interna</li>
+                    <li><span class="qa-check">✓</span> Testes de integração entre camadas</li>
+                    <li><span class="qa-check">✓</span> Validação de banco de dados e APIs</li>
+                    <li><span class="qa-check">✓</span> Verificação de fluxo front + back</li>
+                    <li><span class="qa-check">✓</span> Debug com acesso a logs e schema</li>
+                </ul>
+            </div>
+            <span class="qa-hover-hint">hover ⌄</span>
+        </div>
+
+        <!-- 8 — Bug Hunt (Detecção e Relatório de Bugs) -->
+        <div class="qa-card qa-card-highlight" tabindex="0">
+            <div class="qa-card-main">
+                <div class="qa-icon">🐛</div>
+                <h3>Bug Hunt</h3>
+                <p>Detecção, classificação e relatório profissional de bugs.</p>
+            </div>
+            <div class="qa-card-expand">
+                <ul class="qa-detail-list">
+                    <li><span class="qa-check">✓</span> Detecção de bugs funcionais e visuais</li>
+                    <li><span class="qa-check">✓</span> Classificação por severidade e prioridade</li>
+                    <li><span class="qa-check">✓</span> Bug report estruturado (passos, evidência, ambiente)</li>
+                    <li><span class="qa-check">✓</span> Prints, vídeos e logs anexados</li>
+                    <li><span class="qa-check">✓</span> Acompanhamento até a correção</li>
+                </ul>
+            </div>
+            <span class="qa-hover-hint">hover ⌄</span>
+        </div>
+    </div>
+
+    <!-- Métricas -->
+    <div class="qa-metrics">
+        <div class="metric">
+            <span class="metric-value">0</span>
+            <span class="metric-label">Bugs em produção nos últimos 12 meses</span>
+        </div>
+        <div class="metric">
+            <span class="metric-value">100%</span>
+            <span class="metric-label">Projetos com testes documentados</span>
+        </div>
+        <div class="metric">
+            <span class="metric-value">90+</span>
+            <span class="metric-label">Score Lighthouse médio</span>
+        </div>
+    </div>
+
+    <div class="qa-cta">
+        <a href="https://wa.me/5547996412384?text=Ol%C3%A1!%20Quero%20uma%20Auditoria%20QA%20no%20meu%20site.%20Podemos%20conversar%3F"
+           target="_blank" rel="noopener" class="btn btn-primary">
+            <i class="fab fa-whatsapp"></i> Solicitar auditoria QA
+        </a>
+    </div>
+</section>
+
+    <!-- ===== PORTFÓLIO ===== -->
     <section class="portfolio" id="portfolio">
         <div class="section-header">
             <h2>Projetos <span class="gradient-text">Recentes</span></h2>
             <p>Alguns dos trabalhos que entregamos</p>
         </div>
         <div class="portfolio-grid">
-            <a href="https://ng-express.netlify.app" target="_blank" class="portfolio-link">
+            <a href="https://ng-express.netlify.app" target="_blank" rel="noopener" class="portfolio-link">
                 <div class="portfolio-item">
-                    <img src="https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="NG Express" class="portfolio-img">
+                    <img src="https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="NG Express" class="portfolio-img" loading="lazy">
                     <div class="portfolio-overlay">
                         <h3>NG Express <i class="fas fa-external-link-alt"></i></h3>
                         <p>Frota de veículos</p>
                     </div>
                 </div>
             </a>
-            <a href="https://codecarvalho-dev.github.io/repo-techMob/" target="_blank" class="portfolio-link">
+            <a href="https://codecarvalho-dev.github.io/repo-techMob/" target="_blank" rel="noopener" class="portfolio-link">
                 <div class="portfolio-item">
-                    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="TechMobile" class="portfolio-img">
+                    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="TechMobile" class="portfolio-img" loading="lazy">
                     <div class="portfolio-overlay">
                         <h3>TechMobile <i class="fas fa-external-link-alt"></i></h3>
                         <p>E-commerce de tecnologia</p>
                     </div>
                 </div>
             </a>
-            <a href="https://codecarvalho-dev.github.io/repo-fotografia/" target="_blank" class="portfolio-link">
+            <a href="https://codecarvalho-dev.github.io/repo-fotografia/" target="_blank" rel="noopener" class="portfolio-link">
                 <div class="portfolio-item">
-                    <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Ensaio&Arte" class="portfolio-img">
+                    <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Ensaio&Arte" class="portfolio-img" loading="lazy">
                     <div class="portfolio-overlay">
                         <h3>Ensaio&Arte <i class="fas fa-external-link-alt"></i></h3>
                         <p>Empresa de fotografias</p>
@@ -150,8 +374,8 @@
         </div>
     </section>
 
+    <!-- ===== PREÇOS ===== -->
     <section class="pricing" id="pricing">
-        <!-- Pricing content (mantido igual) -->
         <div class="section-header">
             <h2>Planos <span class="gradient-text">Flexíveis</span></h2>
             <p>Escolha a opção ideal para seu negócio</p>
@@ -168,31 +392,43 @@
                     <li>Otimização SEO básica</li>
                     <li>Entrega em 20 dias úteis</li>
                     <li>Suporte por 30 dias</li>
+ HEAD
                     <li>Taxa de manutenção de R$59,90</li>
+
+                    <li>Taxa de manutenção de R$ 49,90</li>
+ 6c37369 (ajuste no dominio)
                 </ul>
-                <a href="#contact" class="btn btn-outline">Começar</a>
+                <a href="https://wa.me/5547996412384?text=Ol%C3%A1!%20Quero%20o%20plano%20B%C3%A1sico%20(R%24%20497)." target="_blank" rel="noopener" class="btn btn-outline">Começar</a>
             </div>
             <div class="pricing-card featured">
                 <div class="featured-tag">Mais Popular</div>
                 <div class="pricing-header">
                     <h3>Profissional</h3>
-                    <div class="pricing-price">R$ 997</div>
+                    <div class="pricing-price">R$ 849</div>
                 </div>
                 <ul class="pricing-features">
                     <li>Design responsivo premium</li>
                     <li>Até 3 seções</li>
                     <li>Otimização SEO completa</li>
-                    <li>Formulário de contato</li>
+                    <li>Testes QA inclusos</li>
                     <li>Entrega em 15 dias úteis</li>
                     <li>Suporte por 60 dias</li>
+HEAD
                     <li>Taxa de manutenção de R$49,90</li>
+
+                    <li>Taxa de manutenção de R$ 79,90</li>
+ 6c37369 (ajuste no dominio)
                 </ul>
-                <a href="#contact" class="btn btn-primary">Começar</a>
+                <a href="https://wa.me/5547996412384?text=Ol%C3%A1!%20Quero%20o%20plano%20Profissional%20(R%24%20997)." target="_blank" rel="noopener" class="btn btn-primary">Começar</a>
             </div>
             <div class="pricing-card">
                 <div class="pricing-header">
                     <h3>Premium</h3>
+HEAD
                     <div class="pricing-price">A partir de R$ 2.799</div>
+
+                    <div class="pricing-price">R$ 2.299</div>
+ 6c37369 (ajuste no dominio)
                 </div>
                 <ul class="pricing-features">
                     <li>Tudo do plano Profissional</li>
@@ -203,31 +439,26 @@
                     <li>Suporte prioritário</li>
                     <li>Taxa de Manutenção de R$39,90</li>
                 </ul>
-                <a href="#contact" class="btn btn-outline">Começar</a>
+                <a href="https://wa.me/5547996412384?text=Ol%C3%A1!%20Quero%20o%20plano%20Premium%20(R%24%202.799)." target="_blank" rel="noopener" class="btn btn-outline">Começar</a>
             </div>
         </div>
     </section>
 
+    <!-- ===== SOBRE ===== -->
     <section class="about" id="about">
-        <!-- About content (mantido igual) -->
         <div class="about-content">
             <div class="about-text">
                 <h2>Sobre <span class="gradient-text">nós</span></h2>
                 <p>Somos especialistas em criar landing pages de alta conversão. Nosso foco é entregar designs modernos e funcionais que ajudam negócios a crescerem online.</p>
                 <p>Com anos de experiência no mercado, já ajudamos mais de 100 clientes a alcançarem seus objetivos digitais com páginas otimizadas e resultados reais.</p>
+                <p>Além do desenvolvimento full-stack, atuo como <strong>QA Engineer</strong> — cada projeto passa por testes funcionais, responsivos, de performance e acessibilidade.</p>
                 <div class="about-features">
-                    <div class="about-feature">
-                        <span>✓</span> Design exclusivo
-                    </div>
-                    <div class="about-feature">
-                        <span>✓</span> Código otimizado
-                    </div>
-                    <div class="about-feature">
-                        <span>✓</span> Suporte dedicado
-                    </div>
-                    <div class="about-feature">
-                        <span>✓</span> Entrega rápida
-                    </div>
+                    <div class="about-feature"><span>✓</span> Design exclusivo</div>
+                    <div class="about-feature"><span>✓</span> Código otimizado</div>
+                    <div class="about-feature"><span>✓</span> Testes QA inclusos</div>
+                    <div class="about-feature"><span>✓</span> Suporte dedicado</div>
+                    <div class="about-feature"><span>✓</span> Entrega rápida</div>
+                    <div class="about-feature"><span>✓</span> Relatório de testes</div>
                 </div>
             </div>
             <div class="about-image">
@@ -253,12 +484,12 @@
         </div>
     </section>
 
-    <!-- SEÇÃO CONTATO COM NOVO FORMULÁRIO DO WHATSAPP -->
+    <!-- ===== CONTATO (somente WhatsApp) ===== -->
     <section class="contact" id="contact">
         <div class="contact-content">
             <div class="contact-info">
                 <h3>Vamos <span class="gradient-text">conversar?</span></h3>
-                <p>Entre em contato e solicite um orçamento personalizado para seu projeto.</p>
+                <p>Fale comigo diretamente pelo WhatsApp e receba um orçamento personalizado em poucos minutos.</p>
                 <div class="contact-details">
                     <div class="contact-item">
                         <div class="contact-icon">📧</div>
@@ -283,34 +514,29 @@
                     </div>
                 </div>
             </div>
-            
-            
-            <!--<div class="contact-form" id="quote">
-                <form id="contactForm">
-                    <div class="form-group">
-                        <input type="text" name="Nome" placeholder="Seu nome" required>
-                    </div>
-                    <div class="form-group">
-                         <input type="email" name="Email" placeholder="Seu email" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" name="WhatsApp" placeholder="WhatsApp com DDD" required>
-                     </div>
-                    <div class="form-group">
-                         <textarea name="Mensagem" placeholder="Fale sobre seu projeto..." required></textarea>
-                    </div>
-                        <button type="submit" class="btn btn-primary">Solicitar Orçamento</button>
-                </form>
+
+            <div class="contact-cta-box">
+                <div class="cta-box-icon">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <h3>Atendimento direto via WhatsApp</h3>
+                <p>Sem formulários, sem espera. Clique abaixo e fale comigo agora mesmo.</p>
+                <a href="https://wa.me/5547996412384?text=Ol%C3%A1!%20Vim%20pelo%20site%20CodeCarvalho%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener" class="btn btn-primary btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i> Abrir conversa no WhatsApp
+                </a>
+                <p class="contact-cta-note">Resposta média: até 2 horas em horário comercial</p>
             </div>
-        </div>-->
+        </div>
     </section>
 
+    <!-- ===== CTA FINAL ===== -->
     <section class="cta">
-       
         <div class="cta-content">
             <h2>Pronto para <span class="gradient-text">começar?</span></h2>
             <p>Solicite um orçamento sem compromisso e receba uma proposta personalizada para seu negócio.</p>
-            <a href="#contact" class="btn btn-primary">Solicitar Orçamento</a>
+            <a href="https://wa.me/5547996412384?text=Ol%C3%A1!%20Quero%20solicitar%20um%20or%C3%A7amento%20para%20meu%20projeto." target="_blank" rel="noopener" class="btn btn-primary">
+                <i class="fab fa-whatsapp"></i> Solicitar Orçamento
+            </a>
         </div>
     </section>
 
@@ -319,30 +545,26 @@
             <div class="logo" style="font-size: 1.5rem;">CodeCarvalho</div>
             <p style="color: #a0a0a0;">© <span id="currentYear"></span> CodeCarvalho by Gabriele Carvalho. Todos os direitos reservados.</p>
             <div class="social-links">
-                <a href="#">Instagram</a>
-                <a href="#">LinkedIn</a>
-                <a href="https://github.com/CodeCarvalho-dev">GitHub</a>
+                <a href="#" target="_blank" rel="noopener">Instagram</a>
+                <a href="https://www.linkedin.com/in/gabriele-carvalho-qa/" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://github.com/orgs/GabiiCarvalho-QAEngineer/repositories" target="_blank" rel="noopener">GitHub</a>
             </div>
         </div>
     </footer>
 
-    <a href="https://wa.me/5547996412384?text=Olá!%20Vim%20pelo%20site%20CodeCarvalho%20e%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços." target="_blank" class="whatsapp-float" aria-label="Contato via WhatsApp">
+    <a href="https://wa.me/5547996412384?text=Ol%C3%A1!%20Vim%20pelo%20site%20CodeCarvalho%20e%20gostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os." target="_blank" rel="noopener" class="whatsapp-float" aria-label="Contato via WhatsApp">
         <i class="fab fa-whatsapp"></i>
         <span class="whatsapp-tooltip">Fale diretamente comigo!</span>
     </a>
 
-    <div id="toast" class="toast success">
+    <div id="toast" class="toast success" role="status" aria-live="polite">
         <div class="toast-container">
-            <div class="toast-icon">
-                <i class="fas fa-check"></i>
-            </div>
+            <div class="toast-icon"><i class="fas fa-check"></i></div>
             <div class="toast-content">
                 <div class="toast-title">Sucesso!</div>
-                <div class="toast-message" id="toastMessage">Mensagem enviada com sucesso!</div>
+                <div class="toast-message" id="toastMessage"></div>
             </div>
-            <div class="toast-close" onclick="closeToast()">
-                <i class="fas fa-times"></i>
-            </div>
+            <div class="toast-close" onclick="closeToast()"><i class="fas fa-times"></i></div>
         </div>
         <div class="toast-progress"></div>
     </div>
